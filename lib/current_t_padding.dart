@@ -43,15 +43,30 @@ class _CurrentTPaddingState extends State<CurrentTPadding> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const ReusedSumMinButton(
-                          icon: Icons.minimize,
-                          bottomSize: 200,
+                        ReusedSumMinButton(
+                            icon: Icons.minimize,
+                            bottomSize: 200,
+                            onPressed: () {
+                              setState(
+                                () {
+                                  num--;
+                                },
+                              );
+                            }),
+                        Text(
+                          '$num',
+                          style: const TextStyle(fontSize: 22),
                         ),
-                        Text('$num'),
-                        const ReusedSumMinButton(
-                          icon: Icons.add,
-                          bottomSize: 0,
-                        ),
+                        ReusedSumMinButton(
+                            icon: Icons.add,
+                            bottomSize: 0,
+                            onPressed: () {
+                              setState(
+                                () {
+                                  num++;
+                                },
+                              );
+                            }),
                       ],
                     ),
                   )
