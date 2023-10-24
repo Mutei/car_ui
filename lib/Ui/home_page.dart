@@ -1,9 +1,9 @@
 import 'package:car_ui/Ui/rows/PercentageBatteryRow.dart';
-import 'package:car_ui/constant/colors.dart';
+import 'package:car_ui/current_t_padding.dart';
 import 'package:flutter/material.dart';
-import 'package:car_ui/padding_column.dart';
-
-import '../power_on_off_padding.dart';
+import 'package:car_ui/Ui/padding/padding_column.dart';
+import 'padding/padding_column.dart';
+import 'padding/power_on_off_padding.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
             const Row(
               children: [
                 PowerOnOffPadding(),
-                PowerOnOffPadding(),
+                CurrentTPadding(),
               ],
             ),
           ],
