@@ -31,7 +31,7 @@ class _PowerOnOffPaddingState extends State<PowerOnOffPadding> {
             ),
             child: Center(
               child: FloatingActionButton(
-                backgroundColor: Colors.grey,
+                backgroundColor: kFloatingButton,
                 onPressed: () {
                   setState(() {
                     isButtonPressed = !isButtonPressed;

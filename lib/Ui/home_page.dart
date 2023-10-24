@@ -1,5 +1,8 @@
+import 'package:car_ui/Ui/padding/final_padding.dart';
+import 'package:car_ui/Ui/padding/flash_padding.dart';
+import 'package:car_ui/Ui/padding/sport_mode_padding.dart';
 import 'package:car_ui/Ui/rows/PercentageBatteryRow.dart';
-import 'package:car_ui/current_t_padding.dart';
+import 'package:car_ui/Ui/padding/current_t_padding.dart';
 import 'package:flutter/material.dart';
 import 'package:car_ui/Ui/padding/padding_column.dart';
 import 'padding/padding_column.dart';
@@ -41,8 +44,12 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             const Row(
-              children: [],
+              children: [
+                SportModePadding(),
+                FlashPadding(),
+              ],
             ),
+            const FinalPadding(),
           ],
         ),
       ),

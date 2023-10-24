@@ -1,7 +1,7 @@
 import 'package:car_ui/reused_sum_minus.dart';
 import 'package:flutter/material.dart';
 
-import 'constant/colors.dart';
+import '../../constant/colors.dart';
 
 class CurrentTPadding extends StatefulWidget {
   const CurrentTPadding({

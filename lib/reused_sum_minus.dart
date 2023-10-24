@@ -1,3 +1,4 @@
+import 'package:car_ui/constant/colors.dart';
 import 'package:flutter/material.dart';
 
 class ReusedSumMinButton extends StatelessWidget {
@@ -13,7 +14,7 @@ class ReusedSumMinButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      backgroundColor: Colors.grey,
+      backgroundColor: kFloatingButton,
       onPressed: onPressed,
       child: Padding(
         padding: EdgeInsets.only(
